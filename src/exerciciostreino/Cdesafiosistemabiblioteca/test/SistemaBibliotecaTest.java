@@ -18,6 +18,7 @@ public class SistemaBibliotecaTest {
 
         Usuario usuario1 = new Usuario("Luan", "1");
         Usuario usuario2 = new Usuario("Pedro", "2");
+        Usuario usuario3 = new Usuario("Marco", "3");
 
         usuario1.emprestarLivro(livro2);
         usuario1.emprestarLivro(livro1);
@@ -33,7 +34,7 @@ public class SistemaBibliotecaTest {
 
         biblioteca.registrarUsuario(usuario1);
         biblioteca.registrarUsuario(usuario2);
-
+        biblioteca.registrarUsuario(usuario3);
 
         biblioteca.exibiroBiblioteca();
         biblioteca.exibirUsuarios();
