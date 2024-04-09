@@ -1,0 +1,44 @@
+import java.lang.IllegalArgumentException;
+
+public class Produto{
+    private String nome;
+    private double preco;
+    private String descricao;
+
+    public Produto(String nome, String descricao, double preco){
+        this.nome = nome;
+        this.descricao = descricao;
+        this.preco = descricao;
+        if(preco <= 0){
+            throw new IllegalArgumentException("Preço inválido.");
+        }
+    }
+    
+    public String getNome(){
+        return nome;
+    }
+
+    public void setNome(){
+        this.nome = nome;
+    }
+
+    public String getDescricao(){
+        return descricao;
+    }
+
+    public void setDescricao(){
+        this.descricao = descricao;
+    }
+
+    public double getPreco(){
+        return preco;
+    }
+
+    public void setPreco(){
+        if(preco <= 0){
+            throw new IllegalArgumentException("Preço inválido.");
+        }
+        this.preco = preco;
+    }
+
+}

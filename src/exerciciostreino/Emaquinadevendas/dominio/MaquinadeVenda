@@ -1,0 +1,8 @@
+public class MaquinaDeVenda{
+    private List<Produto> listaDeProdutos;
+    
+    public MaquinaDeVenda(List<Produto> listaDeProdutos){
+
+    }
+
+}
