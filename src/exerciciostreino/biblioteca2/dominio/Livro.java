@@ -14,10 +14,10 @@ public class Livro {
         this.genero = genero;
     }
 
-    public void exibirLivro(){
-        System.out.format("Título: %s, Autor: %s, Gênero: %s, Numeração: %s \n", this.titulo, this.autor, this.genero, this.numeracao);
+    public void exibirLivro() {
+        System.out.format("Título: %s, Autor: %s, Gênero: %s, Numeração: %s \n", this.titulo, this.autor, this.genero,
+                this.numeracao);
     }
-
 
     public String getTitulo() {
         return titulo;

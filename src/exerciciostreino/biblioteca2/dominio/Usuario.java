@@ -1,10 +1,8 @@
 package exerciciostreino.biblioteca2.dominio;
 
-
 public class Usuario {
     private String nome;
     private int idade;
-
 
     public Usuario(String nome, int idade) {
         this.nome = nome;

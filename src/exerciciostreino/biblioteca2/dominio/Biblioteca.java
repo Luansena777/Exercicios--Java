@@ -28,11 +28,9 @@ public class Biblioteca {
         }
         if (!livroEncontrado) {
             throw new IllegalArgumentException("Identificador inválido");
-            
 
         }
     }
-
 
     public void exibirLivro() {
         System.out.println("---- Biblioteca ----");
@@ -42,7 +40,8 @@ public class Biblioteca {
                 System.out.println("Não tem livros disponíveis para mostrar.");
                 break;
             } else {
-                if (livro.isDisponivel()) livro.exibirLivro();
+                if (livro.isDisponivel())
+                    livro.exibirLivro();
             }
 
         }

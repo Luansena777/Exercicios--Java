@@ -35,5 +35,4 @@ public class Emprestimo {
         historicoEmprestimo.remove(livro);
     }
 
-
 }
