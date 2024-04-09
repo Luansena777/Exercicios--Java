@@ -18,15 +18,18 @@ public class Biblioteca {
     public void removerLivro(String numeracao) {
         boolean livroEncontrado = false;
         for (Livro livro : livros) {
-            if (numeracao.equals(livro.getNumeracao())) {
+            if (numeracao.equals(livro.getNumeracao()) && livro.isDisponivel()) {
                 livros.remove(livro);
                 System.out.format("Livro \"%s\" removido a biblioteca\n", livro.getTitulo());
                 livroEncontrado = true;
+                livro.setDisponivel(false);
                 break;
             }
         }
         if (!livroEncontrado) {
             throw new IllegalArgumentException("Identificador inválido");
+            
+
         }
     }
 
