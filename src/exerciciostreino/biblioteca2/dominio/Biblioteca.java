@@ -34,15 +34,15 @@ public class Biblioteca {
     public void exibirLivro() {
         System.out.println("---- Biblioteca ----");
         System.out.println("-- Livros Disponíveis --");
-        if (livros.isEmpty()) {
-            System.out.println("Não tem livros disponíveis para mostrar.");
-        } else {
-            for (Livro livro : livros) {
+        for (Livro livro : livros) {
+            if (!livro.isDisponivel()) {
+                System.out.println("Não tem livros disponíveis para mostrar.");
+                break;
+            } else {
                 if (livro.isDisponivel()) livro.exibirLivro();
             }
+
         }
-
-
     }
 
     public List<Livro> getLivros() {
